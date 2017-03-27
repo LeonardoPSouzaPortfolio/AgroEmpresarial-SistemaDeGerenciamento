@@ -23,7 +23,7 @@
  Nesse topico serão mostradas as principais telas do sistemas seguindo de suas funcionalidades.
  
  #### 5.1. Login
-Inicialmente o sistema inicia na tela de “login” Figura 7 onde o funcionario ir á entrar com seus dados de autenticacão.
+Inicialmente o sistema inicia na tela de “login” onde o funcionario ir á entrar com seus dados de autenticacão.
 
 <img src="https://uploaddeimagens.com.br/images/000/872/103/full/7.png?1490626274">
 
@@ -86,3 +86,54 @@ O menu de “confirmação de pagamento” disponibiliza imprimir a nota fiscal 
 O menu de “pedidos” e onde são feitas as listas de produtos que pretendem dar entrada de estoque, são listadas no painel de produto somente os produtos com o “estoque” abaixo do “estoque crítico” assim facilitando quais produtos estão com falta de estoque podendo assim pesquisar na barra de pesquisa por outros produtos ja cadastrados ou adicionar novos produtos. Apos a conclusão do pedido é habilitado o botão de imprimir os pedidos.
 
 <img src="https://uploaddeimagens.com.br/images/000/872/157/full/18.png?1490629684">
+
+#### 5.10 Entrada de estoque
+Na entrada de estoque e o menu onde são inseridos a entrada de produto na empresa, adicionando o valor ao estoque do produto existente.
+
+<img src="https://uploaddeimagens.com.br/images/000/872/162/full/19.png?1490630264">
+
+#### 5.11 Contas a receber
+Este e o menu onde são listadas as contas a serem pagas assim como registrar um pagamento feito a prazo informando o valor pago e assim calculando o “valor restante”.
+Quando o “valor restante” de um pagamento for igual a 0 (zero) automaticamente o status
+da conta e mudada para “pago”. 
+
+<img src="https://uploaddeimagens.com.br/images/000/872/164/full/20.png?1490630395">
+
+#### 5.12 Relatórios 
+No menu de “Relatorios” se encontram os relatórios de produtos cadastrados, produtos mais vendidos, relatorio de vendas diária, apuramento de vendas diária, mensal e anual, balanço anual e relatorios de vendas avançados
+
+<img src="https://uploaddeimagens.com.br/images/000/872/169/full/21.png?1490630618">
+
+#### 5.13 Graficos 
+No menu de “Graficos” são encontrados gráficos de produtos mais vendidos em vários formatos de graficos, apuramento mensal e anual, gráficos comparativos onde é possível comparar o apuramento de vendas em duas diferentes epocas (més/ano).
+
+<img src="https://uploaddeimagens.com.br/images/000/872/172/full/22.png?1490630751">
+
+#### 5.14 Controle de Acesso
+O menu “Controle de Acesso” e onde são concedidos os acessos ao sistema, nele é possível selecionar quais ferramentas do sistema cada usuário terá acesso.
+
+<img src="https://uploaddeimagens.com.br/images/000/872/176/full/23.png?1490630867">
+
+### 6. Segurança do Sistema
+Nesse topico são apresentadas as seguranças e como estão sendo tratados os campos de formularios de maneira que evite possíveis erros de usuarios.
+´
+#### 6.1. SQL Injection
+SQL Injection e uma técnica onde um atacante cria ou altera comandos SQL existentes para expor dados escondidos, ou sobrescrever dados valiosos, ou ainda executar comandos de sistema perigosos no servidor.
+
+O sistema e implementado com o implementação do hibernate e com especificação JPA, essas ferramentas evitam falhas de seguranças como SQL Injection. 
+
+#### 6.2. Erros de preenchimentos de formularios 
+E muito comum formulários aceitar qualquer tipo de valores como preencher letras em campos numericos ou mesmo esquecer de preencher um campo obrigatório. 
+
+#### 6.2.1. Valor invalido ´
+Para evitar esses tipo de erro de usuarios foi usada uma classe para tratar preenchimentos de campos impedindo de inserir letras em campos numericos, converter valores de preços para numeros flutuantes.
+´
+#### 6.2.2. Preenchimento obrigatorio 
+Para evitar que um formulario seja concluído com campos obrigatorios vazios foi criado um metodo “trataCampos” onde verifica se os campos obrigatórios foi preenchidos caso contrario exibir á uma mensagem informando o campos á serem preenchidos e assim 
+impedindo que conclua o formulario sem o preenchimento dos campos. 
+
+#### 6.3. MD5
+O MD5 que e um algoritmo de hash de 128 bits unidirecional usado para criptografar senhas. No formulario de funcionários onde é inserido a senha, ao sair do campo automaticamente e gerado o MD5 no campo senha transformando o valor inserido num hash de ´
+32 caracteres.
+
+Na tela de login onde e inserido o login e a senha do usuario o valor do campo senha é convertido no hash e verificando a integridade do login.
