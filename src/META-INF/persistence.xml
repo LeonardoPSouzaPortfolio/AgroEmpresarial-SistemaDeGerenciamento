@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="AgroEmpresarialPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.hibernate.ejb.HibernatePersistence</provider>
+    <class>br.com.tcc.entity.Unidade</class>
+    <class>br.com.tcc.entity.Cidade</class>
+    <class>br.com.tcc.entity.Pagamentoparafornecedor</class>
+    <class>br.com.tcc.entity.Fornecedor</class>
+    <class>br.com.tcc.entity.Cliente</class>
+    <class>br.com.tcc.entity.Funcionario</class>
+    <class>br.com.tcc.entity.Pedidodetalhe</class>
+    <class>br.com.tcc.entity.Funcao</class>
+    <class>br.com.tcc.entity.Bairro</class>
+    <class>br.com.tcc.entity.Pagamentocliente</class>
+    <class>br.com.tcc.entity.Vendadetalhe</class>
+    <class>br.com.tcc.entity.Vendaregistro</class>
+    <class>br.com.tcc.entity.Entradaprodutodetalhe</class>
+    <class>br.com.tcc.entity.Entradaprodutoregistro</class>
+    <class>br.com.tcc.entity.Pedidoregistro</class>
+    <class>br.com.tcc.entity.Produto</class>
+    <class>br.com.tcc.entity.Tipopagamento</class>
+    <class>br.com.tcc.entity.Tipofornecedor</class>
+    <class>br.com.tcc.entity.Acesso</class>
+    <class>br.com.tcc.entity.Orcamentodetalhe</class>
+    <class>br.com.tcc.entity.Orcamentoregistro</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/agroempresarial?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="1463"/>
+      <property name="hibernate.cache.provider_class" value="org.hibernate.cache.NoCacheProvider"/>
+      <property name="hibernate.format_sql" value="true"/>
+      <property name="hibernate.show_sql" value="true"/>
+    </properties>
+  </persistence-unit>
+  <persistence-unit name="agroempresarial?zeroDateTimeBehavior=convertToNullPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.hibernate.ejb.HibernatePersistence</provider>
+    <class>br.com.tcc.entity.Vendaregistro</class>
+    <class>br.com.tcc.entity.Cliente</class>
+    <class>br.com.tcc.entity.Itemvenda</class>
+    <class>br.com.tcc.entity.Venda</class>
+    <class>br.com.tcc.entity.Orcamentoregistro</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/agroempresarial?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="1463"/>
+      <property name="hibernate.cache.provider_class" value="org.hibernate.cache.NoCacheProvider"/>
+    </properties>
+  </persistence-unit>
+</persistence>
