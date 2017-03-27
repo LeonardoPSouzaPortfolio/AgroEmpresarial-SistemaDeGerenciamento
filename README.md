@@ -12,3 +12,4 @@ para guardar os detalhes desse registro, ou seja, quais produtos foram adicionad
 mostrado na Figura 1 assim evitando redundancia de dados. 
 
 ![1](http://187.7.106.14:7963/uploads/Leonardo/tcc-leonardo/76ac41223a/1.png)
+<img src="http://187.7.106.14:7963/uploads/Leonardo/tcc-leonardo/76ac41223a/1.png" width="1000" height="100">
