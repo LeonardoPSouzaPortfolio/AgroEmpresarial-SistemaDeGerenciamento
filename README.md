@@ -11,4 +11,4 @@ do banco, uma para guardar registro do mesmo como data e nome de funcionario e o
 para guardar os detalhes desse registro, ou seja, quais produtos foram adicionados como
 mostrado na Figura 1 assim evitando redundancia de dados. 
 
-<img src="https://uploaddeimagens.com.br/images/000/872/063/original/1.png?1490623965" height="1133">
+<img src="https://uploaddeimagens.com.br/images/000/872/063/original/1.png?1490623965">
