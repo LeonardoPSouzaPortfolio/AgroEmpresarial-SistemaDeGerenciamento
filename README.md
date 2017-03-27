@@ -53,9 +53,8 @@ No “painel de ações” são encontrados os botões “novo”, “editar”,
 <img src="https://uploaddeimagens.com.br/images/000/872/120/full/11.png?1490627503">
 
 
-#### 5.5 Manutencção
-As telas dos itens da manutenção possui um layout diferente do layout apresentado no do “Cadastros de Cliente”. Embora ambas tenha a mesma implementação nos paineis foi escolhido deixar os layout da tela de “cadastros de cliente” do “menu principal” ´
-com uma interface mais amigavel para o funcionário poder operar as ações, enquanto nas telas de manutenções serem mais limpas porém mas com o layout menos amigável para facilitar dar manutenção aos arquivos. Nas telas de manutenções foi incluído o botao de excluir registro.
+#### 5.5 Manutenção
+As telas dos itens da manutenção possui um layout diferente do layout apresentado no do “Cadastros de Cliente”. Embora ambas tenha a mesma implementação nos paineis foi escolhido deixar os layout da tela de “cadastros de cliente” do “menu principal” com uma interface mais amigavel para o funcionário poder operar as ações, enquanto nas telas de manutenções serem mais limpas porém mas com o layout menos amigável para facilitar dar manutenção aos arquivos. Nas telas de manutenções foi incluído o botao de excluir registro.
 
 <img src="https://uploaddeimagens.com.br/images/000/872/133/full/12.png?1490628214">
 
