@@ -17,7 +17,17 @@
 <img src="https://uploaddeimagens.com.br/images/000/872/094/full/6.png?1490625904">
 
  ### 4. Tecnologias Utilizadas
- Java + Swing + JPA(hibernate) + iText + JfreeChart + MySql
+ *Java* - Linguagem de programação utilizada.
+ 
+ *Swing* - Interface gráfica do java para criações das telas.
+ 
+ *JPA* - Para persistencia dos dados com a implementação do *Hibernate*. 
+ 
+ *iText* - Usado para geração de notas fiscais e relatórios.
+ 
+ *JfreeChart* - Usado para geração de gráficos.
+ 
+ *MySql* - Banco de dados
  
  ### 5. Interface do sistema
  Nesse topico serão mostradas as principais telas do sistemas seguindo de suas funcionalidades.
