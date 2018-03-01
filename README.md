@@ -89,7 +89,7 @@ alt="Tela de login" title="Clique para ampliar">
 #### 5.2 Menu Principal
 &nbsp;&nbsp;&nbsp;&nbsp;A tela de “menu principal” **figura 5** serão informadas algumas informações como o dia da semana, data e hora atual e o horário que o usuário entrou no sistema.
 
-<img src="https://uploaddeimagens.com.br/images/000/872/106/full/9.png?1490626408">
+<img src="https://uploaddeimagens.com.br/images/000/872/106/full/9.png?1490626408"
  alt="Tela do menu principal" title="Clique para ampliar">
   <p align="center">
     <b>Figura 5 - Menu Principal</b>
